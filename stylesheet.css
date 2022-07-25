@@ -1,0 +1,153 @@
+body {
+	font-family: 'Arial';	
+}
+
+.bg-gray{
+    background-color: #cccccc;
+}
+
+.text-gray{
+    color: #747474;
+}
+.btn-custom {
+
+    background-color: #444444 !important;
+    color: #ffffff;
+    border-radius: 10px 10px 10px 10px;  
+}
+
+.btn-custom:hover {
+    background-color: #4da6ff !important;
+    color: #ffffff;
+}
+
+.card{
+    height: 450px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	font-size: 1.1rem;
+	color: #000000;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	color: #4da6ff;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+	min-width: 200px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu li .dropdown-item:hover {
+	color: #ED6436;
+	background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu { 
+	display: inline-block; 
+}
+
+.offcanvas .offcanvas-body .nav .nav-link {
+    font-size: 1.1rem;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.offcanvas .offcanvas-body .nav .nav-link:hover {
+    color: #1a7cc2 !important;
+}
+
+.text-orange {
+	color: #4da6ff;
+}
+
+/*---------------------------------animation---------------------*/
+.blink {
+  animation-duration: 0.7s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*---------------------------------------------------*/
+
+.moveleft{
+	 animation-name: moveInleft;
+   animation-duration: 0.7s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translate(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*----------------------------------------------------*/
+
+.moveright{
+	  animation-name: moveInRight;
+    animation-duration: 0.7s;
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+@media (max-width: 768px){
+    .card1{
+       width: 330px;
+       margin-top: 10px;
+    }
+    .card2{
+        max-width: 325px !important;
+    }
+    .img-1{
+        display: none;
+    }
+}
+
+
+@media (max-width: 660px){
+    .card1{
+       width: 320px;
+       margin-top: 10px;
+    }
+    .card2{
+        max-width: 325px !important;
+    }
+    .img-1{
+        display: none;
+    }
+}
+
